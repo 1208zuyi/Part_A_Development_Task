@@ -134,6 +134,57 @@ td:nth-child(6) {
   width: 15%;
 }
 
+/*         PAGINATION       */
+#pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content:end;
+}
+
+/* Pagination links */
+#pagination a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+#pagination a:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+/* Active page link */
+#pagination a.active {
+  background-color: #007bff;
+  color: #f2f2f2;
+}
+
+/* Left and right navigation buttons */
+#pagination .nav-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+#pagination .nav-button:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+#pagination-container {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Distribute items along the main axis */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
 /*  ***********************  */
 /*  ********LOGIN**********  */
 /*  ***********************  */
@@ -227,56 +278,4 @@ button.tablinks {
   height: 95vh;
   background-color: #f2f2f2;
   border-radius: 0 10px 10px 0;
-}
-
-
-
-#pagination {
-  margin-top: 20px;
-  display: flex;
-  justify-content:end;
-}
-
-/* Pagination links */
-#pagination a {
-  padding: 5px 10px;
-  margin: 0 5px;
-  text-decoration: none;
-  color: #333;
-  border: none;
-  border-radius: 50px;
-  transition: background-color 0.3s;
-}
-
-#pagination a:hover {
-  background-color: #ccc;
-  color: white;
-}
-
-/* Active page link */
-#pagination a.active {
-  background-color: #007bff;
-  color: #f2f2f2;
-}
-
-/* Left and right navigation buttons */
-#pagination .nav-button {
-  padding: 5px 10px;
-  margin: 0 5px;
-  text-decoration: none;
-  color: #333;
-  border-radius: 50px;
-  transition: background-color 0.3s;
-}
-
-#pagination .nav-button:hover {
-  background-color: #ccc;
-  color: white;
-}
-
-#pagination-container {
-  display: flex;
-  align-items: center; /* Align items vertically centered */
-  justify-content: space-between; /* Distribute items along the main axis */
-  margin-top: 20px; /* Adjust margin as needed */
 }
