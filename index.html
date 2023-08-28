@@ -1,0 +1,109 @@
+<!-- https://www.youtube.com/watch?v=fWzp5lZ5CEA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Web Project</title>
+</head>
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
+    <button class="tablinks" onclick="openTab(event, 'Messages')">Messages</button>
+    <button class="tablinks" onclick="openTab(event, 'Settings')">Settings</button>
+  </div>
+  
+  <div class="content">
+    <div id="Home" class="tabcontent">
+      
+      <div class="main">
+        <div class="sidenav">
+          <button id="usa-button" class="dropdown-btn">USA
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <button>Portland</button>
+            <button>New York</button>
+            <button>Los Angeles</button>
+          </div>
+          <button id="australia-button" class="dropdown-btn">Australia
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <button>Queensland</button>
+            <button>Sydney</button>
+            <button>Melbourne</button>
+            <button>Brisbane</button>
+          </div>
+          <button id="canada-button" class="dropdown-btn">Canada
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <button>Ontario</button>
+            <button>Vancouver</button>
+            <button>Montreal</button>
+          </div>
+          
+        </div>
+        <div class ="customer-details">
+          <h1>Customer Details</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Pin Code</th>
+                <th>Country</th>
+              </tr>
+        
+            </thead>
+            <tbody id="data-output"></tbody>
+          </table>
+          <div id="pagination-container">
+            <div id="entries-text"></div>
+            <div id="pagination"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div id="Profile" class="tabcontent">
+      <div class="login-container">
+        <div class="login-form">
+          <label for="userID">UserID:</label>
+        <input type="text" id="userID" placeholder="Enter your UserID">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your Password">
+        
+        <button id="submitBtn">Submit</button>
+
+        </div>
+        <div id="outputContainer"></div>
+        
+      </div>
+      
+      
+    </div>
+    
+    <div id="Messages" class="tabcontent">
+    </div>
+
+    <div id="Settings" class="tabcontent">
+    </div>
+  </div>
+  
+  
+
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>
